@@ -11,7 +11,11 @@ export function getAi(): GoogleGenAI {
   if (!client) {
     client = new GoogleGenAI({
       apiKey,
-      httpOptions: { headers: { "User-Agent": "aistudio-build" } },
+      httpOptions: {
+        headers: { "User-Agent": "aistudio-build" },
+        timeout: 20000,
+        retryOptions: { attempts: 1 },
+      },
     });
   }
   return client;
