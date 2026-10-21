@@ -1,0 +1,6 @@
+{
+  "name": "Supermaan — Voice Assistant & CV",
+  "description": "Minimalist voice assistant and interactive CV for Maan Ronhaar, powered by Gemini 3.8 Flash and Flash TTS with deep-tone vocal synthesis.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
