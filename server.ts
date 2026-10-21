@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import { GoogleGenAI } from "@google/genai";
 import { createServer as createViteServer } from "vite";
-import { MAAN_SYSTEM_INSTRUCTION } from "./api/_lib/maan";
+import { MAAN_SYSTEM_INSTRUCTION } from "./api/_lib/maan.js";
 
 dotenv.config();
 
