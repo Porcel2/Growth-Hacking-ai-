@@ -13,7 +13,7 @@ export function getAi(): GoogleGenAI {
       apiKey,
       httpOptions: {
         headers: { "User-Agent": "aistudio-build" },
-        timeout: 20000,
+        timeout: 25000,
         retryOptions: { attempts: 1 },
       },
     });

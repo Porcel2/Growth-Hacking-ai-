@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
+import { ThinkingLevel } from "@google/genai";
 import { getAi } from "./_lib/gemini.js";
 import { MAAN_SYSTEM_INSTRUCTION } from "./_lib/maan.js";
 
@@ -38,6 +39,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       config: {
         systemInstruction: MAAN_SYSTEM_INSTRUCTION,
         temperature: 0.7,
+        thinkingConfig: { thinkingLevel: ThinkingLevel.LOW },
       },
     });
 
